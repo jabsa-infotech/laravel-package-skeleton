@@ -29,7 +29,9 @@ class PackageGenerator
         ];
 
         // Create target directory
-        $targetDir = dirname($this->baseDir) . "/packages/{$packageName}";
+        $baseDir = dirname($this->baseDir);
+        $baseDir = ".";
+        $targetDir = "{$baseDir}/packages/{$vendorName}/{$packageName}";
         
         if (is_dir($targetDir)) {
             throw new RuntimeException("Package directory already exists: {$targetDir}");
