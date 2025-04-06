@@ -1,0 +1,11 @@
+<?php
+
+namespace {vendor}\{package_class};
+
+class {package_class}
+{
+    public function hello()
+    {
+        return 'Hello from {package_class}!';
+    }
+}

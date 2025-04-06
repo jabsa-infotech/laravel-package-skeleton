@@ -1,0 +1,20 @@
+<?php
+
+namespace {vendor}\{package_class};
+
+use Illuminate\Support\ServiceProvider;
+
+class {package_class}ServiceProvider extends ServiceProvider
+{
+    public function boot()
+    {
+        //
+    }
+
+    public function register()
+    {
+        $this->app->bind('{package_class}', function($app) {
+            return new {package_class}();
+        });
+    }
+}

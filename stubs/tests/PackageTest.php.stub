@@ -1,0 +1,30 @@
+<?php
+
+namespace {vendor}\{package_class}\Tests;
+
+use Orchestra\Testbench\TestCase;
+use {vendor}\{package_class}\{package_class}ServiceProvider;
+use {vendor}\{package_class}\Facades\{package_class};
+
+class PackageTest extends TestCase
+{
+    protected function getPackageProviders($app)
+    {
+        return [
+            {package_class}ServiceProvider::class,
+        ];
+    }
+
+    protected function getPackageAliases($app)
+    {
+        return [
+            '{package_class}' => {package_class}::class,
+        ];
+    }
+
+    /** @test */
+    public function it_can_run_the_hello_method()
+    {
+        $this->assertEquals('Hello from {package_class}!', {package_class}::hello());
+    }
+}
