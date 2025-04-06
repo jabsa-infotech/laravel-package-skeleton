@@ -5,13 +5,13 @@ A simple CLI tool to generate Laravel package skeletons.
 ## Installation
 
 ```bash
-composer global require jabsa/package-maker
+composer global require jabsa-infotech/package-maker
 ```
 
 Or install locally in your project:
 
 ```bash
-composer require --dev jabsa/package-maker
+composer require --dev jabsa-infotech/package-maker
 ```
 
 ## Usage
