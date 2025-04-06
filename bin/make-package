@@ -14,8 +14,8 @@ $generator = new PackageGenerator(__DIR__ . '/..');
 echo "Jabsa Laravel Package Generator\n";
 echo "=======================\n\n";
 
-$vendorName = readline("Vendor name (e.g. acme): ");
-$packageName = readline("Package name (e.g. awesome-package): ");
+$vendorName = readline("Vendor name (e.g. jabsa-infotech): ");
+$packageName = readline("Package name (e.g. my-first-package): ");
 $authorName = readline("Author name: ");
 $authorEmail = readline("Author email: ");
 $description = readline("Package description [A Laravel package]: ") ?: 'A Laravel package';
