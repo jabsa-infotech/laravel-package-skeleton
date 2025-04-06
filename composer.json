@@ -1,5 +1,5 @@
 {
-    "name": "jabsa/package-maker",
+    "name": "jabsa/laravel-package-maker",
     "description": "A Laravel package generator",
     "type": "library",
     "license": "MIT",
